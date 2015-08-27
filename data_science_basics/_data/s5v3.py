@@ -97,4 +97,4 @@ brands = my_csv['brandName']
 columns = ["$0-50", "$50-100", "$100-150", "$150-200", "$200-250", "$250+"]
 write_brand_and_price_file("tempTableFile.csv", data_from_csv)
 brand_and_price_data = open_with_csv("tempTableFile.csv", d=',')
-create_table(brand_and_price_data, price_groups, brands, columns, "../_charts/s5_prices_in_table.png")
+# create_table(brand_and_price_data, price_groups, brands, columns, "../_charts/s5_prices_in_table.png")
