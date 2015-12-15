@@ -10,7 +10,7 @@ def open_with_csv(filename):
 	return data
 
 data_from_csv = open_with_csv('data.csv')
-print(data_from_csv[0])
+# print(data_from_csv[0])
 
 FIELDNAMES = ['', 'id', 'priceLabel', 'name', 'brandId', 
 'brandName', 'imageLink', 'desc', 'vendor', 'patterned', 
@@ -22,7 +22,7 @@ DATATYPES = [('myint', 'i'), ('myid', 'i'), ('price', 'f8'),
 ('vendor', '|S100'), ('pattern', '|S50'), ('material', '|S50')]
 
 def load_data(filename, d='\t'):
-	my_csv = numpy.genfromtxt(filne, delimiter=d, skip_header=1,
+	my_csv = numpy.genfromtxt(filename, delimiter=d, skip_header=1,
 		invalid_raise=False, names=FIELDNAMES,
 		dtype=DATATYPES)
 	return my_csv
